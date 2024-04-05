@@ -1,0 +1,156 @@
+#matrixTable {
+    /* width: 100%; */
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    background: #efefef;
+    margin-top:10px;
+}
+
+/* #matrixTable td {
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, .1)
+} */
+
+#matrixTable div.noborder > div {
+    background: #00bcd4;
+    color: #fff;
+    transition: 200ms ease;
+    border-bottom: 4px solid transparent;
+    transition: 200ms ease
+}
+
+#matrixTable div.noborder > div:hover {
+    border-bottom: 4px solid #086975;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .4);
+    border-radius: 1px;
+    margin-top: -2px;
+    background: #18a7b9;
+}
+
+/* #matrixTable td:hover {
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, .2)
+} */
+
+#ans {
+    margin-top: 10px
+}
+
+#ans div.border {
+    border: 1px solid #e0e0e0;
+    margin: 0 0px 0px 10px;
+    box-shadow: 0px 0px 0px 10px #efefef;
+}
+
+#ans div.noborder > div {
+    padding: 8px 30px 8px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#matrixTable div.border {
+    width: 100%;
+}
+
+#matrixTable div.noborder div,
+#ans div.noborder > div {
+    position: relative;
+    overflow: hidden;
+}
+
+#matrixTable div.noborder i {
+    transition: 300ms ease;
+    opacity: 0.3;
+    position: absolute;
+    font-size: 20px;
+    top: 40px;
+    right: 5px;
+    color: #000;
+}
+
+#matrixTable div.noborder:hover i {
+    top: 10px;
+}
+
+#ans div.noborder > div i {
+    transition: 300ms ease;
+    opacity: 0.3;
+    position: absolute;
+    font-size: 20px;
+    top: -20px;
+    right: 5px;
+    color: #000;
+    transform: rotate(180deg);
+}
+
+#ans div.noborder:hover i {
+    top: 10px
+}
+
+#matrixTable div.noborder > div {
+    cursor: pointer;
+    padding: 8px 30px 8px 15px;
+    color: #444
+}
+
+#ans .close {
+    margin-top: -5px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.custum {
+    padding: 8px 5px 8px 15px;
+    cursor: move;
+    position: relative;
+}
+
+#ans .custum {
+    color: #fff
+}
+
+
+/*by kushal*/
+
+#matrixTable {
+    /* width: 100%; */
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+    background: #efefef;
+}
+
+/* #matrixTable td {
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, .1)
+} */
+
+#matrixTable div.noborder > div {
+    background: #00bcd4;
+    color: #fff;
+    transition: 200ms ease;
+    border-bottom: 4px solid transparent;
+    transition: 200ms ease
+}
+
+#matrixTable div.noborder > div:hover {
+    border-bottom: 4px solid #086975;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .4);
+    border-radius: 1px;
+    margin-top: -2px;
+    background: #18a7b9;
+}
+
+/* #matrixTable td:hover {
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, .2)
+} */
+
+#ans div.border, #matrixTable div.border {
+    float: left;
+    min-width: 90px;
+    height: 37px;
+}
+
+.m-l-20 {
+    margin-left: 20px;
+}
+#mainContentArea{
+display:none;}
+.d-none{
+display:none;}

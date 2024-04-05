@@ -1,0 +1,1 @@
+%1 -Duser.timezone=Asia/Calcutta -Duser.country=US -Duser.language=en -Duser.variant=US -jar %2 %3 %4

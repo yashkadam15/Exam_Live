@@ -1,0 +1,621 @@
+ .headerSection >.container {
+     background-color: #f0f0f0;
+     border: 1px solid #dddddd;
+     margin-top: 4px
+ }
+ 
+ .photoId {
+     width: auto;
+     border: 4px ridge #000;
+     float: left;
+     margin-right: 0px;
+     max-height: 122px;
+ }
+ 
+ body {
+     font-size: 12px;
+     background-color: #F9F9F9;
+     color: #000;
+ }
+ 
+ table {
+     font-size: 12px;
+ }
+ 
+ .section > .container > .row .col-md-5 {
+     padding: 0;
+ }
+ 
+ .userInfo,
+ .questionInfoTable td {
+     font-weight: bold;
+ }
+ 
+ .userInfo p {
+     font-weight: bold;
+ }
+ 
+ .userInfo span {
+     font-weight: normal;
+     text-transform: uppercase;
+ }
+ 
+ .main .question-section > .container > .row > .col-md-12 {
+     padding: 0;
+ }
+ 
+ .questionInfoTable,
+ .questionInfoTable th {
+     text-align: center;
+ }
+ 
+ .questionInfoTable,
+ .questionInfoTable td,
+ .questionInfoTable th {
+     font-size: 11px;
+     padding: 2px!important;
+     font-weight: bold;
+ }
+ 
+ .questionInfoTable td:nth-child(3),
+ .questionInfoTable td:nth-child(6) {
+     color: #2376A3;
+ }
+ 
+ .questionInfoTable td:nth-child(4),
+ .questionInfoTable td:nth-child(7) {
+     color: #CD0000;
+ }
+ 
+ .table-bordered > tbody > tr > td,
+ .table-bordered > tbody > tr > th,
+ .table-bordered > tfoot > tr > td,
+ .table-bordered > tfoot > tr > th,
+ .table-bordered > thead > tr > td,
+ .table-bordered > thead > tr > th {
+     border: 1px solid #eee;
+ }
+ 
+ .headerSection .questionInfoTable {
+     background-color: #C2C2C2;
+     margin-bottom: 0;
+ }
+ 
+ .questionInfoTable td:first-child,
+ .questionInfoTable th:first-child {
+     background-color: #e0e0e0;
+     color: #4C4C4C;
+ }
+ 
+ .counterBlock {
+     background-color: #606060;
+     border-radius: 12px;
+     padding: 10px 0;
+     margin: 0;
+     padding: 7px 0;
+ }
+ 
+ .main .counterBlock p {
+     margin-bottom: 4px;
+ }
+ 
+ .counterText {
+     color: #ffea01;
+     font-size: 18px;
+     font-weight: bold;
+     line-height: 1.7;
+ }
+ 
+ .counter-hh-mm {
+     font-size: 9px;
+     color: white
+ }
+ 
+ .main .blockBlue {
+     font-weight: bold;
+     color: #3a6073;
+ }
+ 
+ .blockLightBlue {
+     font-weight: bold;
+     color: #266b8a;
+ }
+ 
+ .blockdefault {
+     font-weight: bold;
+     color: black;
+ }
+ 
+ .lightBlueHeader {
+     background-color: #f1f9fc;
+     border: 1px solid #c1d8e6;
+     padding: 0 15px;
+ }
+ 
+ .content-iframe .lightBlueHeader:after {
+     position: relative;
+     border-bottom: 5px solid #f00;
+     width: 100%;
+ }
+ 
+ .content-iframe .lightBlue-wrapper {
+     position: relative;
+     border-bottom: 5px solid #f00;
+     width: 100%;
+ }
+ 
+ .content-iframe .lightBlue-wrapper:after {
+     position: relative;
+     border-bottom: 5px solid #f00;
+     width: 100%;
+ }
+ 
+ .lightBlueHeader > div {
+     padding: 0;
+ }
+ 
+ .section > .container > .row > div {
+     padding: 0px 10px;
+ }
+ 
+ .main .form-group {
+     margin-bottom: 0px;
+ }
+ 
+ .main .form-horizontal .radio,
+ .main .form-horizontal .checkbox,
+ .main .form-horizontal .radio-inline,
+ .main .form-horizontal .checkbox-inline {
+     /* padding-top: 0px; */
+     padding-top: 5px;
+padding-bottom: 5px;
+ }
+ 
+ input[type="radio"],
+ input[type="checkbox"] {
+     margin: 0;
+ }
+ 
+ .box {
+     background-color: #f0f0f0;
+     border: 1px solid #97c1d9;
+     width: 96%;
+     padding: 2px;
+     margin: 0 0px 6px 0px;
+     ;
+ }
+ 
+ .main .form-horizontal {
+     margin-bottom: 0px;
+ }
+ 
+ .main #content-iframe .form-horizontal {
+     margin-bottom: 20px;
+ }
+ 
+ .main .subheader2 {
+     padding-top: 3px;
+ }
+ 
+ .question_iframe {
+     height: 385px;
+     width: 100%
+ }
+ 
+ #footer {
+     background: rgba(255, 255, 255, 1);
+     background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 220, 1) 100%);
+     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(220, 220, 220, 1)));
+     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 220, 1) 100%);
+     background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 220, 1) 100%);
+     background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 220, 1) 100%);
+     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(220, 220, 220, 1) 100%);
+    /*  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dcdcdc', GradientType=0); */
+
+ }
+ 
+ .redbtn {}
+ 
+ .btn-group1 {
+     margin-bottom: 6px;
+ }
+ 
+ .main .btn-group1 h5 {
+     margin: 6px auto;
+     text-transform: uppercase;
+     font-size: 11px;
+ }
+ 
+ .btn-group1 a {
+     border-color: #23435C;
+     color: #23435C;
+     font-weight: 600;
+     padding: 0px 5px;
+     font-size: 11px;
+     line-height: 1.5;
+     border-radius: 0px;
+     cursor: default;
+ }
+ 
+ .main p {
+     margin: 0 0 4px;
+ }
+ 
+ .main h2,
+ .main h3,
+ .main h4 {
+     margin-top: 0px;
+     font-weight: bold;
+     margin-bottom: 4px;
+ }
+ 
+ .headerSection {
+     margin-bottom: 6px;
+ }
+ 
+ .container {
+     background-color: white
+ }
+ 
+ .difficulty-section .btn {
+     font-weight: bold;
+ }
+ 
+ .btn-blue {
+     background: url(../images/btn-blue.png) center;
+     width: 46%;
+     height: 40px;
+     color: white;
+     padding-top: 9px;
+     border: 1px solid #45758B;
+     background-size: 97% 100%;
+     background-position: center center;
+ }
+
+ 
+ .btn-blue:focus, .btn-blue:hover {
+     color: #FFFFFF;
+ }
+ 
+ .btn-red {
+     background: url(../images/btn-red.png) center;
+     height: 40px;
+     color: white;
+     padding-top: 9px;
+     border: 1px solid #C1463A;
+     background-size: 97% 100%;
+     background-position: center center;
+     width: 46%;
+ }
+
+ 
+ .btn-red:focus, .btn-red:hover {
+     color: #fff;
+ }
+ 
+ .btn-sm-red {
+     background: url(../images/btn-red-sm.png) center;
+     width: 155px;
+     height: 23px;
+     color: white;
+     padding-top: 0px;
+     border: 1px solid #C1463A;
+     margin-bottom: 5px;
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+
+ 
+ .btn-sm-red:hover, .btn-sm-red:focus {
+     color: #FFFFFF;
+ }
+ 
+ .question_iframe {
+     border: 1px solid #D4D3D3;
+     border-top: transparent;
+ }
+ .btn-group1 a:focus,.btn-group1 a:hover,.btn-group1 a:active {
+    border-color: #23435C;
+    color: #23435C;
+    background-color: #fff;
+}
+ p {
+     font-weight: bold;
+ }
+ 
+ .student_details [class*="col-"] {
+     padding: 0 6px
+ }
+ 
+ .table > thead > tr > th,
+ .table > tbody > tr > th,
+ .table > tfoot > tr > th,
+ .table > thead > tr > td,
+ .table > tbody > tr > td,
+ .table > tfoot > tr > td {
+     border-top: 1px solid #ededed;
+ }
+ 
+ .table > thead > tr > th {
+     border-bottom: 1px solid #ededed;
+ }
+ 
+ .student_details p {
+     margin-bottom: 6px;
+     color: #042D44;
+ }
+ 
+ .main .blockBlue {
+     margin-bottom: 0;
+     margin-top: 3px;
+     font-size: 10px;
+ }
+ 
+ .main .blockBlue span {
+     color: #000;
+     font-weight: bold;
+ }
+ 
+ .main h5 {
+     font-weight: bold;
+ }
+ 
+ .btn:active,
+ .btn.active {
+     /* background-image: auto; */
+      background-size: auto;
+ }
+ 
+ .btn-red:active,
+ .btn-red.active {
+     background: url(../images/btn-red.png) center;
+     background-size: 97% 100%;
+     background-position: center center;
+ }
+ 
+ .btn-blue:active,
+ .btn-blue.active {
+     background: url(../images/btn-blue.png) center;
+     background-size: 97% 100%;
+     background-position: center center;
+ }
+ 
+ .btn-submit:hover {
+     color: #B1EEFF;
+ }
+ 
+ .btn-sm-red:active,
+ .btn-sm-red.active {
+     background: url(../images/btn-red-sm.png) center;
+ }
+ 
+ #footer .mkcl-logo {
+     width: 70px;
+ }
+ 
+ #footer .mscit-logo-h {
+     width: 100px;
+     display: block;
+     float: right;
+ }
+ 
+ #footer .mscit-logo {
+     display: none;
+ }
+ 
+ #footer img {
+     display: inline-block;
+ }
+ 
+ #footer {
+     margin-bottom: 0;
+     padding: 0 5px;
+ }
+ 
+ .instruction {
+     padding: 5px 15px 0px 15px;
+ }
+ 
+ .lightBlueHeader .checkbox .blockBlue,
+ .lightBlueHeader .radio .blockBlue {
+     color: #000;
+ }
+ 
+ .lightBlueHeader .checkbox,
+ .lightBlueHeader .radio {
+     min-height: auto;
+     margin: 0;
+ }
+ 
+ .text-danger {
+     color: #FF0000;
+ }
+ 
+ .box h4 {
+     text-transform: uppercase;
+     font-size: 15px;
+ }
+ 
+ .video-wrapper img {
+     max-height: 122px;
+     height: 122px;
+ }
+ /*Iframe Style*/
+ 
+ .btn-submit {
+     background: url(../images/btn-submit.png) center;
+     width: 150px;
+     height: 29px;
+     color: white;
+     padding-top: 4px;
+     border: 1px solid #0270BB;
+     font-weight: bold;
+     text-transform: uppercase;
+ }
+ 
+ .btn-green {
+     background: url(../images/btn-green.png) center;
+     width: auto;
+     height: 29px;
+     color: white;
+     padding-top: 4px;
+     border: 1px solid #5bbe50;
+     font-weight: bold;
+     background-size: 100% 100%;
+     background-position: center center;
+     text-transform: uppercase;
+ }
+ 
+ .btn-green:active,
+ .btn-green.active {
+     background: url(../images/btn-green.png) center;
+ }
+ 
+ .btn-green:hover,
+ .btn-green:focus,
+ .btn-green.focus {
+     color: #FFFFFF;
+     text-decoration: none;
+ }
+ 
+ .btn-submit:active,
+ .btn-submit.active {
+     background: url(../images/btn-submit.png) center;
+ }
+ 
+ .btn-submit:hover,
+ .btn-submit:focus,
+ .btn-submit.focus {
+     color: #FFFFFF;
+     text-decoration: none;
+ }
+ 
+ .exampage-iframe .form-group .col-sm-2.control-label {
+     font-weight: bold;
+     color: #333;
+ }
+ 
+ .exampage-iframe .form-group .col-sm-10 > p {
+     font-weight: bold;
+     color: #1E5C72;
+ }
+ 
+ .exampage-iframe .form-group .col-sm-10 >.radio label,
+ .exampage-iframe .form-group .col-sm-10 >.checkbox label {
+     color: #1E5C72;
+ }
+ 
+ .main .checkbox label,
+ .main .radio label {
+     min-height: 15px;
+ }
+ 
+ .btn-group1 .answered {
+     color: #333 !important;
+     background-color: #e6e6e6!important;
+     border-color: #adadad!important;
+ }
+ 
+ @media (min-width:1024px) and (max-width:1177px) {
+     .container {
+         width: 100%;
+         padding: 0 20px;
+         max-width: 1024px;
+     }
+     .instruction {
+         padding: 5px 15px 0px 15px;
+     }
+ }
+ 
+ @media (min-width:768px) {
+     #footer .mscit-logo {
+         display: block;
+         width: auto;
+         max-height: 40px;
+         float: right;
+     }
+     #footer .mscit-logo-h {
+         display: none;
+         width: auto;
+         max-height: 40px;
+     }
+     #footer .mkcl-logo {
+         width: auto;
+         max-height: 40px;
+     }
+     .hr-hide {
+         display: none;
+     }
+     .difficulty-section .container .row > div {
+         padding: 0;
+     }
+     .right-box {
+         float: right;
+     }
+     .middle-box {
+         margin: 0 auto 6px auto !important;
+     }
+     .headerSection .container .row > [class*="col-"] {
+         padding: 0 3px;
+     }
+     .pull-right-sm {
+         float: right;
+     }
+ }
+ 
+ @media (max-width:991px) {
+     .photoId {
+         margin-right: 10px;
+     }
+     .headerSection .container .row > [class*="col-"] {
+         margin-bottom: 6px;
+     }
+ }
+ 
+ @media (max-width:768px) {
+     .lightBlueHeader .text-right {
+         text-align: left;
+     }
+     .student_details p {
+         margin-bottom: 6px;
+         display: inline-block;
+         width: 45%;
+     }
+     .box {
+         width: 100%;
+     }
+
+ }
+ 
+ @media (min-width:480px) and (max-width:991px) {
+     .video-wrapper img {
+         float: right;
+     }
+ }
+ 
+ #content-iframe .lightBlue-wrapper .row {
+     position: fixed;
+     border-bottom: 5px solid #FFF;
+     top: 0;
+     width: 100%;
+     z-index: 9;
+ }
+ 
+ #content-iframe > .row {
+        margin-top: 65px;
+    height: 80vh;
+    overflow-y: scroll;
+ }
+ 
+ .questions-details {
+     margin-bottom: 6px
+ }
+ 
+ .text-attmptinfo {
+  font-weight: bold;
+  text-align:center;
+     color: #FF4E08;
+     font-size: 15px;
+      margin-top: 10%;
+	
+ }

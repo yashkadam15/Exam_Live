@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sitemesh>
+	<module id="BaseOES" defaultDecorator="/decorators/detailstheme">			
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/login/logoutMsg"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/login/eventSelection"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/soloLogin/loginpage"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/groupLogin/loginpage"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/groupLogin/postloginpage"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/groupLogin/manualgrouplogin"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/adminLogin/loginpage"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/groupExamTheme.jsp" path="/groupExam/*" />	
+		<mapping decorator="/WEB-INF/views/decorators/soloExamTheme.jsp" path="/exam/*" />			
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp"  path="/login/changeAdminPassword"/>		
+		<mapping path="/groupExam/QuestionContainer" exclude="true" />	
+		<mapping path="/groupExam/ProcessQuestion" exclude="true" />	
+		<mapping path="/exam/QuestionContainer" exclude="true" />	
+		<mapping path="/exam/ProcessQuestion" exclude="true" />
+		<mapping path="/EligibilityCertificate/PrintCertificateInHTML" exclude="true" />
+		<mapping path="/MSCITExam/*" exclude="true" />		
+		<mapping path="/endexam/printScoreCard" exclude="true" />
+		<mapping path="/profilingTestReport/candidateProfilingTestReport" exclude="true" />	
+	</module>	
+	
+	<module id="DigitalSchool" defaultDecorator="/decorators/detailstheme_DS">
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme_DS.jsp" path="/login/logoutMsg"></mapping>		
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme_DS.jsp" path="/login/eventSelection"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme_DS.jsp" path="/soloLogin/loginpage"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme_DS.jsp" path="/groupLogin/loginpage"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme_DS.jsp" path="/groupLogin/postloginpage"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme_DS.jsp" path="/groupLogin/manualgrouplogin"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme_DS.jsp" path="/adminLogin/loginpage"></mapping>			
+		<mapping decorator="/WEB-INF/views/decorators/groupExamTheme_DS.jsp" path="/groupExam/*" />	
+		<mapping decorator="/WEB-INF/views/decorators/soloExamTheme_DS.jsp" path="/exam/*" />		
+		<mapping path="/groupExam/QuestionContainer" exclude="true" />	
+		<mapping path="/groupExam/ProcessQuestion" exclude="true" />			 
+		<mapping path="/exam/QuestionContainer" exclude="true" />	
+		<mapping path="/exam/ProcessQuestion" exclude="true" />		
+	</module>
+	
+
+	
+	<module id="Common">
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/gateway/*"/>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/audit/*"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/activateVenue/venueRegistrationMsg"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/examClient/login"></mapping>
+		<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/activateVenue/venueRegistration"></mapping>
+				
+		<mapping path="/resources/*" exclude="true"/>
+		<mapping path="/commonExam/*" exclude="true" />
+		<mapping path="/endexam/verify" exclude="true" />
+		<mapping path="/audit/verification" exclude="true" />
+		<mapping path="/upload/uploadStart" exclude="true" />
+		<mapping path="/candidateModule/viewPaperSyllabus" exclude="true" />
+		<mapping path="/groupCandidatesModule/viewPaperSyllabus" exclude="true" />				
+		<mapping path="/exam/subQuestionsContainer" exclude="true" />			
+		<mapping path="/EligibilityCertificate/PrintCertificateNoTyping" exclude="true" />
+		<mapping path="/EligibilityCertificate/PrintCertificate" exclude="true" />		
+		<mapping path="/CareerInclinationTestReport/careerInclinationTestPrint" exclude="true" />
+		<mapping path="/certificate/printCertificate" exclude="true" />
+		<mapping path="/examClient/eventConfig" exclude="true" />
+		<mapping path="/examClient/test" exclude="true" />
+		<mapping path="/ArtInclinationTestReport/artInclinationTestPrint" exclude="true" />
+	</module>
+	
+</sitemesh>

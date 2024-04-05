@@ -1,0 +1,435 @@
+
+
+
+/**** Dark Mode CSS start here  ***/ 
+
+.bg1 {    
+        background-color: black; 
+        background-image: none;
+        color: white;
+} 
+.bg1 p{
+	color: white;
+}
+.bg1 .table {
+    background-color: #7e7e7e;
+}
+.bg1 .table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #919191;
+}
+.bg1 #wcDiv{
+	background-color: #e6e6e6;
+}
+.bg1 textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  background-color: #484848;
+  color: #ffffff;
+}.bg1 .ck.ck-editor__main>.ck-editor__editable {
+    background: #484848;
+}
+.bg1 #matrixTable div.noborder > div {
+    background: #7e7e7e;
+}
+.bg1 .imgDevice{
+	background-color: #cdc9c9;
+}
+.bg1 .question-wrap{
+	color:#fff;
+}
+ .dark-mode .main {
+	background-color: #333; 
+}
+ .dark-mode legend {
+     color: #fff;
+    background-color: #444;
+        border-bottom: 1px solid #333;
+ }
+ .dark-mode .panel {
+     background-color: #000;
+    border: 1px solid #333;
+    border-radius: 10px;
+    border-color: #333;
+ }
+  .dark-mode #myTab li.active a {
+    padding-top: 7px;
+    border-top: 2px solid #939090;
+    border-bottom-color: #fff;
+    color: #f8fcff;
+    background-color: #0c0c0c;
+}
+
+  .dark-mode .table-complex tbody td.highlight {
+   
+}
+.dark-mode {
+  background-color: #000;
+  color: white;
+}
+
+.dark-mode .left-sidebar {
+    background-color: #726d6d; 
+      color: white;
+    }
+
+    
+    
+  .dark-mode  .content-above {
+    /*border-color: ;*/
+    background-color: #000; 
+    }
+    
+    .dark-mode   .panel-primary .panel-heading {
+    color: white;
+    background-color: #000;
+    border-color: #333;
+}
+
+ .dark-mode .profile .holder {
+    border-color: #333;
+}
+
+ .dark-mode #logo {
+    border-color: #333;
+}
+
+ .dark-mode .main:before {
+    background-image: url(../images/sidebg-blue-dark.png) !important;
+    background-color:#726d6d;
+}
+
+ .dark-mode .main:before,  .dark-mode span.sidebg {
+	 background-image: url(../images/sidebg-blue-dark.png) !important;
+	 background-color:#726d6d;
+}
+
+ .dark-mode .left-sidebar {
+  background-image: url(../images/sidebg-blue-dark.png);
+  background-repeat: repeat-y;
+}
+.dar-mode .table-complex tbody td {
+	background-color: #262626; color:#fff;
+}
+
+.dark-mode .table-complex tbody td.highlight {
+	border-color: #6c6c6c;
+    background-color: #545454;
+}
+ .dark-mode .table {
+	background-color: #333; 
+	color:#fff
+}
+
+.dark-mode .table-complex tbody td {
+	background-color: #333;
+}
+
+.dark-mode .box .box-header {
+	background: linear-gradient(to bottom, #262525, #565656bf);
+}
+
+.dark-mode .table-complex thead th {
+	    border-color: #cfcfcf;
+	    color: #f7fcff;
+	    background-color: #282828;
+}
+.dark-mode .footer {
+	    background-color: #363636;
+	    border-top: 1px solid #726f6f;
+	    }
+	.dark-mode .btn-grey {
+	background:linear-gradient(to bottom, #060606, #424242);
+	}
+	
+.dark-mode .content-top {
+	background:linear-gradient(to bottom, #302f2f, #9b9696);
+	border-bottom: 1px solid #4c4c4c;
+}
+
+/*** instruction page ***/
+ .dark-mode .header {
+	/*background:linear-gradient(to bottom, #1b1c1c, #686868) !important;*/
+}
+/* .dark-mode .btn-blue{
+	background-color: #424242;
+	border: 1px solid #565656;
+}
+
+.dark-mode .btn-blue:hover, .btn-blue:focus {
+	    background-color: #666666;
+} */
+
+.dark-mode .imgDevice{
+	background-color: #afafa3;
+}
+
+.dark-mode .questions-area {
+	    background-color: #2a2a2a;
+	    border: 1px solid #545454;    
+}
+.dark-mode .qanswer {
+	color:#fff; 
+}
+
+.dark-mode select{
+	border: 1px solid #646161;
+    background-color: #726d6d;
+    color: #ffffff;
+}
+
+.dark-mode .totalq {
+	color:#fff; 
+}
+
+
+.dark-mode .totalq {
+	border: 1px solid #b1b8c1;
+    background-color: #7e7e7e;
+	}
+
+.dark-mode .palette{
+	border: 1px solid #9c9ea1;
+    background-color: #454648;
+	}
+	
+.dark-mode .btn-disabled, .dark-mode osp .btn-disabled, .dark-mode .btn.disabled {
+	border: 1px solid #646464;
+    color: #fff;
+    background-color: #4a4a4a;
+	}
+	
+	/*
+	.dark-mode .btn-green {
+	border: 1px solid #393e3e;
+    background-color: #3c3c3c;
+	}
+	
+	.dark-mode .btn-greener {
+	border: 1px solid #424242;
+    background-color: #0e0e0e;
+	}
+	.dark-mode .label-success, .dark-mode .badge-success {
+	    background-color: #848d85;
+	}
+.dark-mode .btn-warning {
+	background-image: linear-gradient(to bottom, #343434, #000000);
+	background-color: #565452;
+	}*/
+	
+	/*** instruction page end here **/ 
+	
+.dark-mode .table-striped tbody > tr:nth-child(odd) > td, 
+.dark-mode .table-striped tbody > tr:nth-child(odd) > th {
+	background-color: #5e5e5e96;
+}
+
+.dark-mode  .scrollable {
+	color:#fff; 
+}
+
+.dark-mode .modal {
+	    background-color: #858585f0;
+}
+.dark-mode .modal-footer {
+	 background-color:#4c4b4b;
+}
+/*
+.dark-mode .btn-red {
+	    border: 1px solid #403d3c;
+	    background-color: #6a6665;
+}
+
+.dark-mode .btn-success {
+	background-image: linear-gradient(to bottom, #222422, #181a18);
+	background-color: #111211;
+}*/
+
+.dark-mode #notepadText {
+	background-color: #898888;
+}
+
+.dark-mode #notepad {
+	background-color: #b7b7b7;
+}
+
+.dark-mode .alert-info {
+	color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #7e7e7e;
+}
+
+.dark-mode .alert-info span {
+	color: #ffffff;
+}
+
+.dark-mode .profile-timer span #time-text {
+	color: #fff ; 
+}
+
+.dark-mode .profile-timer span  {
+	color: #fff ; 
+}
+/*
+.dark-mode .btn-dblue {
+    background-color: #b2b3b5;
+    border: 1px solid #898b8d;
+    color: #ffffff;    
+}*/
+
+.dark-mode body.exampage.exampage-hgt p {
+    color: #fff;
+}
+
+.dark-mode .btn-lblue {
+    border: 1px solid #909a9b;
+    color: #ffffff;
+    background-color: #343434; 
+    }
+    
+ .dark-mode .markreview-btn {
+    color: #f5f5f5;
+    background-color: #666464;
+    border: 1px solid #363c3c; 
+    }
+
+.dark-mode .osp-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#1c1e1e;
+}
+
+.dark-mode iframe .bg1 {
+	background-color: #333 !important; 
+}
+.dark-mode iframe .bg1
+{
+	 background-color: #000000;
+}
+.dark-mode .btn-primary {
+	border: 1px solid #2c2e2e;
+    color: #fff;
+    background-color: #272a2a;
+}
+
+.dark-mode .osp-footer a#to-top {
+	    background-color: #000000;
+}
+
+.dark-mode .osp-header {
+    border-bottom: 1px solid #141616;
+    background-color: #212222;
+}
+
+.dark-mode iframe#QuestionContainer{
+	 background-color: #333 !important;
+	 color:#fff;
+}
+.dark-mode .main .container-fluid { 
+	background-color: #000 !important;
+	color:#fff !important;
+	}  	
+
+.dark-mode body .exampage .exampage-hgt .bg1 {
+	 background-color: #333;
+	 color:#fff;
+}
+
+.dark-mode .main .bg1 {	
+	background-color: #333 !important;
+	color:#fff !important;
+}
+
+
+
+/*** Dark mode css end here ***/ 
+/*** toggle button css **/ 
+/* .switch input				
+{
+  display: none;
+}
+
+.switch 
+{
+  display: inline-block;
+  width: 60px; =w
+  height: 30px; =h
+  margin: 4px;
+  transform: translateY(50%);
+  position: relative;
+}
+
+.slider
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+  cursor: pointer;
+  border: 4px solid transparent;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.slider:before
+{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 30px;
+  transform: translateX(-30px); 
+  transition: 0.2s;
+}
+
+input:checked + .slider:before
+{
+  transform: translateX(30px); translateX(w-h)
+  background-color: limeGreen;
+}
+
+input:checked + .slider
+{
+  box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+}
+
+.switch200 .slider:before
+{
+  width: 200%;
+  transform: translateX(-82px); translateX(-(w-h))
+}
+
+.switch200 input:checked + .slider:before
+{
+  background-color: #408080;
+}
+
+.switch200 input:checked + .slider
+{
+  box-shadow: 0 0 0 2px #408080, 0 0 8px #408080;
+} */
+
+
+
+apps-fileview.texmex_20230309.01_p0
+template_darkmode.css
+Displaying template_darkmode.css.

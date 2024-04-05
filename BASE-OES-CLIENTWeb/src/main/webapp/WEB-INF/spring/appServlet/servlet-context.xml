@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans:beans
+    xmlns="http://www.springframework.org/schema/mvc"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:beans="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+
+    <!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+    <!-- Enables the Spring MVC @Controller programming model -->
+    <annotation-driven />
+
+    <!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+    <resources mapping="/resources/**" location="/resources/" />
+    <resources mapping="/examClient/**" location="/examClient/" />
+    <resources mapping="/Logs/**" location="/Logs/" />
+    <resources mapping="/webjars/**" location="/webjars/" />
+
+    <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+    <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <beans:property name="prefix" value="/WEB-INF/views/" />
+        <beans:property name="suffix" value=".jsp" />
+    </beans:bean>
+
+    <context:component-scan base-package="mkcl.oesclient.*" />
+
+    <mvc:interceptors>
+        <beans:bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+            <beans:property name="paramName" value="lang" />
+        </beans:bean>
+
+        <beans:bean id="themeChangeInterceptor" class="org.springframework.web.servlet.theme.ThemeChangeInterceptor">
+            <beans:property name="paramName" value="lang" />
+        </beans:bean>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/**" />
+            <mvc:exclude-mapping path="/resources/**" />
+            <mvc:exclude-mapping path="/examClient/**" />
+            <mvc:exclude-mapping path="/webjars/**" />
+            <mvc:exclude-mapping path="/Logs/**" />
+            <mvc:exclude-mapping path="/internalerror/error" />
+            <mvc:exclude-mapping path="/adminLogin/loginpage" />
+            <mvc:exclude-mapping path="/decorators/**" />
+            <mvc:exclude-mapping path="/OESApi/**" />
+            <mvc:exclude-mapping path="/gateway/exam" />
+            <mvc:exclude-mapping path="/login/eventSelection" />
+            <mvc:exclude-mapping path="/SyncApi/**" />
+            <mvc:exclude-mapping path="/preCheck/**" />
+            <mvc:exclude-mapping path="/activateVenue/**" />
+            <mvc:exclude-mapping path="/audit/**" />
+            <mvc:exclude-mapping path="/wsfAuth/**" />
+            <mvc:exclude-mapping path="/launcher" />
+            <mvc:exclude-mapping path="/ResultAnalysis/generateAnalysisBookletReport" />
+            <mvc:exclude-mapping path="/ResultAnalysis/viewtestscore_wkhtml" />
+            <mvc:exclude-mapping path="/candidateReport/createCASReprotFromHtml" />
+            <mvc:exclude-mapping path="/loginReport/CandidateLoginReportPDF" />
+            <mvc:exclude-mapping path="/exam/displayImage" />
+            <mvc:exclude-mapping path="/exam/sub_QuestionContainer/**" />
+            <mvc:exclude-mapping path="/candidateAttempt/getAttemptedDetailsInHTML" />
+            <beans:bean class="mkcl.oesclient.security.CSRFStatelessInterceptor"></beans:bean>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <!-- for login and logout -->
+            <mvc:mapping path="/soloLogin/loginpage" />
+            <!-- for admin login -->
+            <mvc:mapping path="/adminLogin/loginpage" />
+            <mvc:mapping path="/login/logout" />
+            <!-- for test start -->
+            <mvc:mapping path="/exam/TakeTest" />
+            <!-- for instruction rendering -->
+            <mvc:mapping path="/exam/instruction" />
+            <!-- for test end -->
+            <!-- when test ends by timer -->
+            <mvc:mapping path="/commonExam/hidFrameendTest" />
+            <!-- click on end test button -->
+            <mvc:mapping path="/endexam/FrmendTest" />
+            <mvc:mapping path="/EnableDisableExamEvent/manageExamEvent" />
+            <!-- for item rendering -->
+            <mvc:mapping path="/exam/QuestionContainer" />
+            <mvc:mapping path="/login/logout" />
+            <beans:bean class="mkcl.oesclient.systemaudit.OESLoggingInterceptor"></beans:bean>
+        </mvc:interceptor>
+
+        <!-- added for WS federation authorization -->
+        <mvc:interceptor>
+            <mvc:mapping path="/login/logout" />
+            <mvc:mapping path="/login/logoutMsg" />
+            <mvc:mapping path="/login/eventSelection" />
+            <beans:bean class="mkcl.oesclient.utilities.WSFederationAuthInterceptor"></beans:bean>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <!-- for reload sever -->
+            <mvc:mapping path="/appmanager/reload" />
+            <mvc:mapping path="/appmanager/reloadApp.ajax" />
+            <mvc:mapping path="/appmanager/selectPropertiesFile" />
+            <mvc:mapping path="/appmanager/showPropertiesPage" />
+            <mvc:mapping path="/appmanager/updateProperty" />
+            <beans:bean class="mkcl.oesclient.appmanager.utilities.AppManagerInterceptor"></beans:bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- Max size in bytes...Now 150 MB. -->
+        <beans:property name="maxUploadSize" value="150000000" />
+        <!-- Max size in memory. -->
+        <beans:property name="maxInMemorySize" value="4096" />
+    </beans:bean>
+
+    <beans:bean
+        id="loadClientFiles"
+        class="mkcl.oesclient.commons.utilities.LoadPropertiesFileHelper"
+        init-method="loadClientProperties" lazy-init="false"></beans:bean>
+
+    <beans:bean
+        id="collectAppInfo"
+        class="mkcl.oesclient.commons.utilities.AppInfoHelper"
+        init-method="setApplicationInfo" lazy-init="false"></beans:bean>
+
+    <beans:bean
+        id="noSqlConnection"
+        class="mkcl.oesclient.commons.utilities.NoSqlConnection"
+        init-method="setDefaultNoSqlSettings" lazy-init="false"></beans:bean>
+</beans:beans>

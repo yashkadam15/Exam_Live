@@ -1,0 +1,106 @@
+.quick-links {
+  margin: 7px 0 7px 0;
+  padding: 0 30px 5px;
+  /* border-bottom: 1px solid #b9b9b9; */
+}
+.quick-links.ql-small {
+  text-align: center;
+}
+.quick-links.ql-small .ql-box {
+  width: auto;
+}
+.liquid-responsive .liquid-slider .panel .panel-wrapper {
+  padding: 0 28px;
+}
+.ql-box {
+  /* background-color: #ffffff; */
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 20px 5px 10px;
+  text-align: center;
+  width: 100px;
+  display: inline-block;
+  margin: 0;
+}
+.ql-box i {
+  margin-bottom: 12px;
+}
+.ql-box span {
+  display: block;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: xx-small; /* new Added  */
+}
+/* .ql-box:hover {
+  background-color: #338D93;
+  text-decoration: none;
+  border-color: #26696D;
+  -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.25);
+} */
+.ql-box:hover i {
+  background-image: url(../images/sprite-icons-white.png);
+}
+.ql-box:hover span {
+  color: #FFF;
+}
+.icon-large {
+  background-image: url(../images/sprite-icons.png);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 26px;
+}
+.icon-gov {
+  background-position: 0 0;
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+  .ql-box {
+    /* width: 140px; */
+    padding: 10px 0px 5px;/* new updated erlier  20px 15px 10px; */
+   /*  margin: 0 5px; */
+  }
+  .liquid-responsive .liquid-slider .panel .panel-wrapper {
+    padding: 0 60px;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .ql-box {
+    /* width: 140px; */
+     padding: 10px 0px 5px;/* new updated erlier  20px 15px 10px; */
+    /* margin: 5px; */
+  }
+  .liquid-responsive .liquid-slider .panel .panel-wrapper {
+    padding: 0 65px;
+  }
+  .quick-links .liquid-slider-wrapper .liquid-nav-left-arrow,
+  .quick-links .liquid-slider-wrapper .liquid-nav-right-arrow {
+    height: 245px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .ql-box {
+   /*  width: 140px; */
+     padding: 10px 0px 5px;/* new updated erlier  20px 15px 10px; */
+   /*  margin: 5px; */
+  }
+  .liquid-responsive .liquid-slider .panel .panel-wrapper {
+    padding: 0 25px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .ql-box {
+  /*   width: 70%; */
+     padding: 10px 0px 5px;/* new updated erlier  20px 15px 10px; */
+  /*   margin: 5px; */
+  }
+  .liquid-responsive .liquid-slider .panel .panel-wrapper {
+    padding: 0 10px;
+  }
+}

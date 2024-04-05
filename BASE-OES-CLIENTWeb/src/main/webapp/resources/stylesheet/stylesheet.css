@@ -1,0 +1,316 @@
+/*=============================================
+           Fonts
+=============================================*/
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300 800;
+  src: url("../fonts/opensans/opensans.woff2") format("woff2-variations"), url("../fonts/montsopensans/opensans.woff2") format("woff2");
+}
+
+/* Montserrate */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300 800;
+  src: url("../fonts/montserrat/montserrat.woff2") format("woff2-variations"), url("../fonts/montserrat/montserrat.woff2") format("woff2");
+}
+
+/*=============================================
+           Stylesheeet
+=============================================*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  overflow-x: hidden;
+  color: #4c4c4c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #4c1da2;
+}
+
+a:hover, a:focus {
+  color: #381577;
+}
+
+.main-content {
+  padding: 50px;
+}
+
+.main-content .content-wrapper {
+  padding: 15px 15px 0;
+  border: 1px solid #505050;
+}
+
+.header-top {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #505050;
+  padding-bottom: 15px;
+}
+
+.brand-logo {
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+}
+
+.brand-logo img {
+  height: auto;
+  max-height: 100%;
+}
+
+.brand-logo.brand-logo-left {
+  height: 110px;
+}
+
+.brand-logo.brand-logo-right {
+  height: 110px;
+}
+
+.header-title {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #00adee;
+}
+
+.header-info {
+  padding: 15px 0;
+  border-bottom: 1px solid #505050;
+}
+
+.header-label {
+  font-size: 15px;
+  line-height: 24px;
+  color: #646464;
+}
+
+.header-label strong {
+  color: #4c4c4c;
+}
+
+.content-area {
+  padding: 15px 0 30px;
+}
+
+.content-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.content-text:last-child {
+  margin-bottom: 0;
+}
+
+.content-text.content-text-alt {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.content-username {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.content-heading {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.content-text-answers {
+  color: #3e3e3e;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 12px;
+}
+
+.content-text-answers span {
+  font-weight: 600;
+}
+
+.content-text-answers .content-ans {
+  font-weight: 400;
+  padding-left: 14px;
+  color: #838383;
+  height: 48px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.content-text-note {
+  padding: 18px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content-text-note span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.content-text-info {
+  font-size: 13px;
+  line-height: 20px;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content-text-info span {
+  font-weight: 700;
+}
+
+.content-citation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 30px;
+}
+
+.content-citation .cite-info {
+  text-align: right;
+}
+
+.content-citation .cite-helper {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #0046e3;
+  display: block;
+}
+
+.cite-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 18px;
+}
+
+.cite-main span {
+  font-size: 13px;
+  line-height: 22px;
+  color: #646464;
+  display: block;
+}
+
+.cite-main-info {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #181818;
+}
+
+.state-area {
+  text-align: center;
+  margin-left: 15px;
+}
+
+.state-area .state-name {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-top: 6px;
+  color: #002bff;
+  background: #ebecff;
+  padding: 4px 8px;
+  border: 1px dashed #6476ff;
+  border-radius: 4px;
+}
+
+.content-asses {
+  width: 30px;
+  height: 16px;
+  display: block;
+  background-color: #4c4c4c;
+  margin: 0px;
+}
+
+.state-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.state-holder .current-state {
+  position: relative;
+}
+
+.state-holder .current-state::before {
+  content: '';
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"%3E\a       %3Cpath fill-rule="evenodd" stroke="%23000" stroke-width="1"  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" /%3E%3C/svg%3E');
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  bottom: -24px;
+  left: 10%;
+}
+
+.assess-very-high {
+  background-color: #ff0003;
+}
+
+.assess-high {
+  background-color: #854007;
+}
+
+.assess-moderate {
+  background-color: #ff5200;
+}
+
+.assess-low {
+  background-color: #FFFF00;
+}
+
+.assess-very-low {
+  background-color: #03a700;
+}
+/*# sourceMappingURL=stylesheet.css.map */

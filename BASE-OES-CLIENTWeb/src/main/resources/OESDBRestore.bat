@@ -1,0 +1,1 @@
+%6 -Xmx512m -Duser.timezone=Asia/Calcutta -Duser.country=US -Duser.language=en -Duser.variant=US -jar %5 -u %1 -p %2 -dbrstr %3 > %4
