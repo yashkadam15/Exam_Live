@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- Appenders -->
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %d{HH:mm:ss.SSS} %-5l - %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="WEB" class="org.apache.log4j.RollingFileAppender">
+		<errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
+		<param name="File" value="${OESrootPath}Logs/oesClient.log" /> 
+
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="2048KB" />
+		<param name="MaxBackupIndex" value="400" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %d{dd MMM yyyy HH:mm:ss.SSS} %-5l - %m%n%n" />
+		</layout>
+	</appender>
+	<appender name="SYNC" class="org.apache.log4j.RollingFileAppender">
+		<errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
+		<param name="File" value="${OESrootPath}Logs/oesSync.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="2048KB" />
+		<param name="MaxBackupIndex" value="400" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %d{dd MMM yyyy HH:mm:ss.SSS} %-5l - %m%n%n" />
+		</layout>
+	</appender>
+	<appender name="UPLOADER" class="org.apache.log4j.RollingFileAppender">
+		<errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
+		<param name="File" value="${OESrootPath}Logs/oesUpload.log" />
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="2048KB" />
+		<param name="MaxBackupIndex" value="400" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %d{dd MMM yyyy HH:mm:ss.SSS} %-5l - %m%n%n" />
+		</layout>
+	</appender>
+	<appender name="LEAKFINDER" class="org.apache.log4j.RollingFileAppender">
+		<errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
+		<param name="File" value="${OESrootPath}Logs/dbLeak.log" /> 
+
+		<param name="Append" value="true" />
+		<param name="MaxFileSize" value="2048KB" />
+		<param name="MaxBackupIndex" value="400" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %d{dd MMM yyyy HH:mm:ss.SSS} %-5l - %m%n%n" />
+		</layout>
+	</appender>
+	
+	<logger name="com.mchange.v2.resourcepool.BasicResourcePool" additivity="false">
+		<level value="error" />
+		<appender-ref ref="LEAKFINDER" />
+	</logger>
+	
+	<logger name="mkcl.oesclient.sync.controllers" additivity="false">
+		<level value="error" />
+		<appender-ref ref="SYNC" />	
+	</logger>
+	
+	<logger name="mkcl.oesclient.uploader" additivity="false">
+		<level value="error" />
+		<appender-ref ref="UPLOADER" />	
+	</logger>
+	
+	<logger name="mkcl.oesclient.uploader.service" additivity="false">
+		<level value="error" />
+		<appender-ref ref="UPLOADER" />	
+	</logger>
+	
+	<logger name="mkcl.oesclient.sync.services" additivity="false">
+		<level value="error" />
+		<appender-ref ref="SYNC" />	
+	</logger>
+
+	<root>
+		<priority value="DEBUG" />
+		<appender-ref ref="console" />	
+	</root>
+	
+</log4j:configuration>

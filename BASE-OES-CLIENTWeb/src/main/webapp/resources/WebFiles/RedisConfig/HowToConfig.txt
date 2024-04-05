@@ -1,0 +1,18 @@
+## Supports:
+   - Apache Tomcat 7
+   - Apache Tomcat 8
+   - Apache Tomcat 9
+   - Apache Tomcat 10
+   
+#### Steps to be done
+
+1. Copy the 4 jars from /resources/WebFiles/RedisConfig/Jars to tomcat/lib directory.
+	
+2. Copy the /resources/WebFiles/RedisConfig/Config/redis-data-cache.properties file to tomcat/conf directory and update your Redis server details.
+
+3. Add the below two lines in tomcat/conf/context.xml file.
+
+<Valve className="tomcat.request.session.redis.SessionHandlerValve" />
+<Manager className="tomcat.request.session.redis.SessionManager" />
+
+4. Restart the tomcat service

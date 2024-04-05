@@ -1,0 +1,283 @@
+
+a {
+	text-decoration: none
+}
+.sitemap,.sitemap ul,.sitemap li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sitemap {
+	background: url(../resources/images/line1.gif) repeat-y;
+}
+
+.sitemap li {
+	line-height: 20px;
+	margin-top: 8px;
+	position: relative;
+	width: 100%;
+}
+/* IE leaves a blank space where span is added so this is to avoid that */
+.sitemap li {
+	float: left;
+	display: inline;
+}
+
+.sitemap li a {
+	padding-left: 3px;
+}
+
+.sitemap li a.but {
+	padding: 1px;
+	border: solid 1px #c0c0c0;
+	color: #080808;
+	font-size: 7pt;
+	margin: 2px;
+	font-weight: normal;
+	background-color: #efefef;
+}
+
+.sitemap li a.butGroup {
+	padding: 2px;
+	border: solid 1px #888;
+	color: #080808;
+	font-size: 7pt;
+	margin: 2px;
+	background-color: #efefef;
+	font-weight: bold;
+}
+
+.sitemap li span {
+	float: left;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 13px;
+	height: 13px;
+	cursor: auto;
+	font-size: 0;
+}
+
+.sitemap li span,.sitemap li span.collapsed {
+	background: url(../images/collapsed.gif) no-repeat 0 0;
+}
+
+.sitemap li span.expanded {
+	background: url(../images/expanded.gif) no-repeat 0 0;
+}
+
+.sitemap li span.dot {
+	background: url(../images/line2.gif) no-repeat -5px -5px;
+}
+
+.sitemap li ul {
+	margin-left: 25px;
+	display: block;
+	clear: both;
+	background: #fff url(../images/line1.gif) repeat-y;
+}
+
+.sitemap li li {
+	background: url(../images/line2.gif) no-repeat 0 0;
+}
+
+.sitemap,.sitemap ul {
+	min-height: 1%;
+}
+
+.sitemap:after,.sitemap ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.sitemap,.sitemap ul {
+	display: block;
+}
+
+.sitemap ul {
+	display: none;
+}
+
+.sitemap li div.butHolder {
+	clear: both;
+	margin: 10px 3px 3px 30px;
+}
+
+.sitemap li input[type=text] {
+	width: 25px;
+	padding: 2px;
+	height: 14px;
+	border: solid 1px #888;
+	text-align: center;
+}
+
+div.LinkGroup {
+	width: 95%;
+	margin-left: 20px;
+	text-align: left;
+	border: solid 1px #efefef;
+	background-color: #fcfcfc;
+}
+
+div.LinkGroup div {
+	padding: 2px 1px 2px 1px;
+	font-size: 8pt;
+}
+
+div.TR {
+	width: 100%;
+	margin-left: 20px;
+	text-align: left;
+	clear: both;
+}
+
+div.TR div.TH,div.TR div.TD {
+	float: none;
+	min-width: 50px;
+	/* white-space: wrap; */
+	white-space: normal;
+	padding: 3px;
+}
+
+
+/* Second Tree view */
+
+
+
+
+
+.sitemap1,.sitemap1 ul,.sitemap1 li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sitemap1 {
+	background: url(../resources/images/line1.gif) repeat-y;
+}
+
+.sitemap1 li {
+	line-height: 20px;
+	margin-top: 8px;
+	position: relative;
+	width: 100%;
+}
+/* IE leaves a blank space where span is added so this is to avoid that */
+.sitemap1 li {
+	float: left;
+	display: inline;
+}
+
+.sitemap1 li a {
+	padding-left: 3px;
+}
+
+.sitemap1 li a.but {
+	padding: 1px;
+	border: solid 1px #c0c0c0;
+	color: #080808;
+	font-size: 7pt;
+	margin: 2px;
+	font-weight: normal;
+	background-color: #efefef;
+}
+
+.sitemap1 li a.butGroup {
+	padding: 2px;
+	border: solid 1px #888;
+	color: #080808;
+	font-size: 7pt;
+	margin: 2px;
+	background-color: #efefef;
+	font-weight: bold;
+}
+
+.sitemap1 li span {
+	float: left;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 13px;
+	height: 13px;
+	cursor: auto;
+	font-size: 0;
+}
+
+.sitemap1 li span,.sitemap1 li span.collapsed {
+	background: url(../images/collapsed.gif) no-repeat 0 0;
+}
+
+.sitemap1 li span.expanded {
+	background: url(../images/expanded.gif) no-repeat 0 0;
+}
+
+.sitemap1 li span.dot {
+	background: url(../images/line2.gif) no-repeat -5px -5px;
+}
+
+.sitemap1 li ul {
+	margin-left: 25px;
+	display: block;
+	clear: both;
+	background: #fff url(../images/line1.gif) repeat-y;
+}
+
+.sitemap1 li li {
+	background: url(../images/line2.gif) no-repeat 0 0;
+}
+
+.sitemap1,.sitemap1 ul {
+	min-height: 1%;
+}
+
+.sitemap1:after,.sitemap1 ul:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.sitemap1,.sitemap1 ul {
+	display: block;
+}
+
+.sitemap1 ul {
+	display: none;
+}
+
+.sitemap1 li div.butHolder {
+	clear: both;
+	margin: 10px 3px 3px 30px;
+}
+
+.sitemap1 li input[type=text] {
+	width: 25px;
+	padding: 2px;
+	height: 14px;
+	border: solid 1px #888;
+	text-align: center;
+}
+
+
+/* Image Of arrow*/
+/*  .widget-content li { */
+/* background: url("../images/forward.png") no-repeat left bottom;*/
+/* font-size: .75em; */
+/* text-align: left; */
+/* line-height: 23px; */
+/* padding-left: 12px;  */
+/* list-style: none; */
+/* }  */
+
+/* .widget-content span { */
+/* background: url("../images/forward.png") no-repeat left bottom; */
+/* font-size: .75em; */
+/* text-align: left; */
+/* line-height: 23px; */
+/* padding-left: 10px; */
+/* } */
