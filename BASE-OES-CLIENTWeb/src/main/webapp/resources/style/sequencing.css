@@ -1,0 +1,195 @@
+#expand .cc-question,
+#expand .cc-answer,
+#expand .cc-holder {
+    margin: 0;
+    padding: 20px;
+    /*  height: 100vh; */
+    border-right: 1px solid #e8e8e8;
+}
+
+.cc-question {
+    border-bottom: 1px solid #e5e5e5;
+    background: #f6f6f6;
+}
+
+.cc-question .text-right,
+.cc-answer .text-right {
+    text-align: left !important;
+}
+
+.cc-question .col-md-11,
+.cc-answer .col-md-11 {
+    width: 100%;
+}
+
+.que-image {
+    max-width: 100%;
+    margin: 15px 0px;
+    display: block;
+}
+
+.que-image.w-200 {
+    max-width: 100%;
+    width: 200px;
+}
+
+.numberCircle {
+    display: inline-block;
+    line-height: 0px;
+    border-radius: 50%;
+    border: 2px solid;
+    font-size: 32px;
+}
+
+.numberCircle span {
+    display: inline-block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.cc-question,
+.cc-answer {
+    overflow-y: auto;
+    height: 100%;
+}
+
+#circleTable tr td .numberCircle {
+    background: #1faeff;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+}
+
+#circleTable tr td:nth-child(2) .numberCircle {
+    background: #77b900;
+}
+
+#circleTable tr td:nth-child(3) .numberCircle {
+    background: #ff76bc
+}
+
+#circleTable tr td:nth-child(4) .numberCircle {
+    background: #00bcd4;
+}
+
+#circleTable tr td:nth-child(5) .numberCircle {
+    background: #f45a5c;
+}
+
+.ansCircle .noborder .numberCircle {
+    background: #1faeff;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.addCircle {
+    min-width: 65px;
+    background: #f5f1f1;
+    border-radius: 50%;
+    height: 65px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 4px solid #cecece;
+    color: #fff;
+}
+.ansCircle .reset {
+    vertical-align: top;
+    ;
+}
+
+.ansCircle div.border {
+    min-width: 65px;
+    /* padding: 50%; */
+    background: #f5f1f1;
+    border-radius: 50%;
+    height: 65px;
+    display: inline-block;
+    margin-right: 2px;
+    border: 4px solid #cecece;
+    color: #fff;
+}
+
+.ansCircle div.border.emptyDiv {
+    border: none;
+    height: auto;
+    background-color: #fff;
+    vertical-align: text-bottom;
+}
+.custum {
+/*     padding: 8px 5px 8px 15px; */
+    cursor: move;
+    position: relative;
+}
+.pad-20{
+padding:20px;}
+.ansCircle .reset {
+    vertical-align: top;
+}
+.exampage .btn {
+    
+    vertical-align: top;
+}
+.close {
+cursor:pointer;
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+ .ansCircle{
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        .close{
+            float: none;
+            position: absolute;
+            bottom:-10px;
+            left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 10%;
+        }
+        
+        .numberCircle span{
+           min-width: 65px;
+   
+        }
+ .ansCircle div.border{
+            min-width: 70px;
+            height: 50px;
+        }
+        .numberCircle span{
+           min-width: 25px;
+   
+        }
+        .ansCircle .numberCircle span {
+    min-width: 25px;
+    padding-top: 10px;
+    padding-bottom:10px;
+  /* height: 30px; */
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+        .ansCircle div.border {
+            border-radius: 0;
+        }
+        .ansCircle .noborder .numberCircle {
+            border-radius: 0;
+        }
+.custum{
+            padding: 0;
+            padding-bottom:10px;
+        }                
+
+ img.resize, span.numberCircle.text-center > span > img{
+ 	max-width: 100px !important;
+ 	max-height: 100px !important;
+ }     
+   

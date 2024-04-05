@@ -1,0 +1,43 @@
+@page {
+  margin: 0 0px 40px 0;
+  windows: 4;
+  orphans: 1;
+  counter-reset: page 1;
+  .content-wrapper {
+    padding: 50px;
+  }
+}
+
+@media print { 
+  body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      //counter-reset: page1; 
+  }
+  .header-title{
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: bold;
+  }
+  .brand-logo{
+    &.brand-logo-left{
+      height: 120px;
+    }
+    &.brand-logo-right{
+      height: 120px;
+    }
+  }
+  .content-text{
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+  .content-text-answers .content-ans{
+    color: #4c4c4c;
+  }
+  // .state-holder .current-state:after{
+  //   left: 45%;
+  //   transform: translateX(-45%);
+  //   width: 2px;
+  // }
+}

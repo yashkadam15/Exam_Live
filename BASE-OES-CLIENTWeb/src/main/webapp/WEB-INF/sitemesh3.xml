@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sitemesh>
+<!-- For Base OES -->
+
+
+	<mapping exclude="true" path="/resources/*"/>
+	<mapping exclude="true" path="/webjars/*"/>
+	<mapping exclude="true" path="/OESApi/*"/>
+	<mapping decorator="/decorators/detailstheme" path="/*" />
+	<!-- <mapping  path="/" exclude="true" ></mapping> -->	
+	<mapping decorator="/WEB-INF/views/decorators/homeTheme.jsp" path="/"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/login/logoutMsg"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/activateVenue/venueRegistrationMsg"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/login/eventSelection"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/soloLogin/loginpage"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/groupLogin/loginpage"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/groupLogin/postloginpage"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/groupLogin/manualgrouplogin"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/groupLogin/gatewayGrouplogin"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/adminLogin/loginpage"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/audit/*"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/groupExamTheme.jsp" path="/groupExam/*" />	
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/examClient/login"></mapping>
+	<mapping  path="/groupExam/QuestionContainer" exclude="true" />	
+	<mapping  path="/groupExam/ProcessQuestion" exclude="true" />	
+	<mapping decorator="/WEB-INF/views/decorators/soloExamTheme.jsp" path="/exam/*" />	 
+	<mapping  path="/exam/QuestionContainer" exclude="true" />	
+	<mapping  path="/exam/sub_QuestionContainer/*" exclude="true" />
+	<mapping  path="/exam/ProcessQuestion" exclude="true" />
+	<mapping  path="/EligibilityCertificate/PrintCertificateInHTML" exclude="true" />
+	<mapping  path="/MSCITExam/*" exclude="true" />
+
+	
+	<mapping  path="/endexam/printScoreCard" exclude="true" />
+	<mapping  path="/profilingTestReport/candidateProfilingTestReport" exclude="true" />
+
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/activateVenue/venueRegistration"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp"  path="/login/changeAdminPassword"/>
+	<!-- <mapping exclude="true" path="/wsfAuth/*"/> -->
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/wsfAuth/login"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/wsfAuth/eventSelection"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/wsfAuth/logout"></mapping>
+	<mapping decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/launcher"></mapping>
+	<!-- END Base OES -->
+	
+	<!--Common  -->
+	<mapping  path="/commonExam/*" exclude="true" />
+	<mapping  path="/endexam/verify" exclude="true" />
+	<mapping path="/upload/uploadStart" exclude="true" />
+	<mapping path="/candidateModule/viewPaperSyllabus" exclude="true" />
+	<mapping path="/groupCandidatesModule/viewPaperSyllabus" exclude="true" />
+	<!-- skip GatewayController  -->
+	<mapping  decorator="/WEB-INF/views/decorators/preLoginTheme.jsp" path="/gateway/*"/>
+	
+	<mapping  path="/exam/subQuestionsContainer" exclude="true" />	
+	
+	 <mapping path="/EligibilityCertificate/PrintCertificateNoTyping" exclude="true" />
+	 <mapping path="/EligibilityCertificate/PrintCertificate" exclude="true" />
+	
+	<mapping path="/CareerInclinationTestReport/careerInclinationTestPrint" exclude="true" />
+	<mapping path="/certificate/printCertificate" exclude="true" />
+	<mapping path="/examClient/eventConfig" exclude="true" />
+	<mapping path="/examClient/test" exclude="true" />
+	<mapping path="/examClient/getEvidenceServerURL" exclude="true" />
+	<mapping path="/ArtInclinationTestReport/artInclinationTestPrint" exclude="true" />
+	<mapping path="/ShortArtInclinationTestReport/shortArtInclinationTestReportPrint" exclude="true" />
+	
+	<mapping path="/DiabetesDiagnosticTestReport/diabetesDiagnosticTestReport" exclude="true" />
+	<!--End Common  -->
+	
+	<mapping  path="/FileUploader/*" exclude="true" />
+	<mapping  path="/loginReport/CandidateLoginReportPDF" exclude="true" />
+	
+	<mapping path="/candidateReport/createCASReprotFromHtml" exclude="true" />
+	<mapping path="/ResultAnalysis/viewtestscore_wkhtml" exclude="true" />
+	
+	<mapping path="/candidateAttempt/getAttemptedDetailsInHTML" exclude="true" />	
+
+	<mapping decorator="/WEB-INF/views/decorators/appManagerTheme.jsp" path="/appmanager/*"></mapping>
+	
+	<mapping  path="/syncAPI/*" exclude="true" />
+	<mapping  path="/captcha/getCaptcha" exclude="true" />
+	
+</sitemesh>
